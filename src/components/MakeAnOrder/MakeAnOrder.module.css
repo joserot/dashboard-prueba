@@ -1,0 +1,133 @@
+.container {
+  min-width: 447px;
+  border: solid 1px #d6d5d5;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btnFilter {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btnFilter svg {
+  width: 16px;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerCount {
+  display: flex;
+  gap: 15px;
+}
+
+.countEl {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #626262;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.countEl span {
+  color: #626262;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btnsContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnsContainer button {
+  border: solid 1px #626262;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.countItem {
+  border: solid 1px #626262;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.priceEl {
+  width: 30%;
+  border: solid 1px #626262;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceEl span {
+  color: #626262;
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+}
+
+.priceEl span:last-child {
+  border-left: solid 1px #626262;
+  padding: 0 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSubmit {
+  background-color: #367dfd;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  align-self: flex-end;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+}
+
+.btnSubmit:hover {
+  background-color: #1462f4;
+}

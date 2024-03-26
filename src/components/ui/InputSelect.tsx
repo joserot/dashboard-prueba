@@ -35,15 +35,22 @@ export default function InputSelect({
         placeholder={placeholder}
         noOptionsMessage={() => "Sin Opciones"}
         styles={{
+          menu: (baseStyles, state) => ({
+            ...baseStyles,
+            color: "#626262",
+            fontSize: "12px",
+            fontWeight: 600,
+          }),
           control: (baseStyles, state) => ({
             ...baseStyles,
-            borderColor: "#ddd",
-            outlineColor: state.isFocused ? "#ddd" : "#007c9c",
+            borderColor: "#626262",
+            outlineColor: state.isFocused ? "#ddd" : "#1a3d7d",
             boxShadow: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-            color: "#001d31",
-            fontSize: "16px",
-            borderRadius: "3px",
-            height: "39px",
+            color: "#626262",
+            fontSize: "12px",
+            borderRadius: "5px",
+            height: "38px",
+            fontWeight: 600,
           }),
         }}
       />
