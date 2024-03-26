@@ -7,8 +7,8 @@
   top: 0;
   left: 0;
   padding: 35px 15px;
-  padding-bottom: 100px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .logoContainer {
@@ -24,6 +24,10 @@
   max-width: 130px;
   height: auto;
   object-fit: contain;
+}
+
+.linksContainer {
+  flex: 1;
 }
 
 .linkEl {
@@ -98,8 +102,6 @@
 }
 
 .btn {
-  position: absolute;
-  bottom: 35px;
   border: none;
   cursor: pointer;
   display: flex;
@@ -122,6 +124,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex: 0;
 }
 
 @media screen and (max-width: 700px) {

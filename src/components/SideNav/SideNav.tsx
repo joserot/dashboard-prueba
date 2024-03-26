@@ -13,6 +13,7 @@ const {
   logo,
   logoContainer,
   linkEl,
+  linksContainer,
   linkActive,
   notificationEl,
   btn,
@@ -31,22 +32,24 @@ export default function SideNav() {
           alt="Logo SmartWater"
         />
       </Link>
-      {links.map((link) => {
-        return (
-          <Link
-            className={
-              link.label === "Inicio" ? `${linkEl} ${linkActive}` : linkEl
-            }
-            key={link.label}
-            href={link.href}
-          >
-            <FontAwesomeIcon icon={link.icon} /> {link.label}{" "}
-            {link.notifications > 0 && (
-              <span className={notificationEl}>{link.notifications}</span>
-            )}
-          </Link>
-        );
-      })}
+      <div className={linksContainer}>
+        {links.map((link) => {
+          return (
+            <Link
+              className={
+                link.label === "Inicio" ? `${linkEl} ${linkActive}` : linkEl
+              }
+              key={link.label}
+              href={link.href}
+            >
+              <FontAwesomeIcon icon={link.icon} /> {link.label}{" "}
+              {link.notifications > 0 && (
+                <span className={notificationEl}>{link.notifications}</span>
+              )}
+            </Link>
+          );
+        })}
+      </div>
       <div className={btnContainer}>
         <button className={btn}>
           <FontAwesomeIcon icon={faRightFromBracket} /> Salir
