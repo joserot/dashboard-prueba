@@ -1,0 +1,23 @@
+@import "../../app/globals.scss";
+
+.inputContainer {
+  width: 100%;
+}
+
+.input {
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 10px 14px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  outline: 1px solid #ddd;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-color;
+  width: 100%;
+}
+
+.input:focus {
+  outline: solid 1px $primary-color;
+}
