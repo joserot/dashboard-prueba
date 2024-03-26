@@ -1,0 +1,98 @@
+.container {
+  border: solid 1px #d6d5d5;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subTitle {
+  display: block;
+  color: #828282;
+  font-size: 12px;
+}
+
+.btnFilter {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btnFilter svg {
+  width: 16px;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customerEl {
+  display: grid;
+  grid-template-columns: 30px 120px 100px 100px;
+  align-items: center;
+  gap: 10px;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  display: block;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 12px;
+  color: #1a3d7d;
+  padding: 5px 10px;
+  border: solid 1px #1a3d7d;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.amount {
+  display: block;
+  background-color: #1a3d7d;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.amount svg {
+  width: 20px;
+  height: auto;
+}
