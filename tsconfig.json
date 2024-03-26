@@ -21,6 +21,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/Chart/useDemoConfig.js",
+    "src/components/Chart/Chart.tsx",
+    "src/components/Chart/ResizableBox.jsx"
+  ],
   "exclude": ["node_modules"]
 }
