@@ -8,7 +8,16 @@ import { links } from "@/data/links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-const { container, logo, logoContainer, linkEl, notificationEl, btn } = styles;
+const {
+  container,
+  logo,
+  logoContainer,
+  linkEl,
+  linkActive,
+  notificationEl,
+  btn,
+  btnContainer,
+} = styles;
 
 export default function SideNav() {
   return (
@@ -24,7 +33,13 @@ export default function SideNav() {
       </Link>
       {links.map((link) => {
         return (
-          <Link className={linkEl} key={link.label} href={link.href}>
+          <Link
+            className={
+              link.label === "Inicio" ? `${linkEl} ${linkActive}` : linkEl
+            }
+            key={link.label}
+            href={link.href}
+          >
             <FontAwesomeIcon icon={link.icon} /> {link.label}{" "}
             {link.notifications > 0 && (
               <span className={notificationEl}>{link.notifications}</span>
@@ -32,9 +47,11 @@ export default function SideNav() {
           </Link>
         );
       })}
-      <button className={btn}>
-        <FontAwesomeIcon icon={faRightFromBracket} /> Salir
-      </button>
+      <div className={btnContainer}>
+        <button className={btn}>
+          <FontAwesomeIcon icon={faRightFromBracket} /> Salir
+        </button>
+      </div>
     </aside>
   );
 }

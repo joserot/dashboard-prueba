@@ -64,6 +64,23 @@
   border-radius: 20px;
 }
 
+.linkActive {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+}
+
+.linkActive::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 10%;
+  background-color: #697eed;
+  width: 7px;
+  height: 80%;
+  border-radius: 20px;
+}
+
 .notificationEl {
   background-color: #367dfd;
   border-radius: 8px;
@@ -99,4 +116,10 @@
 .btn svg {
   width: 30px;
   height: auto;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
